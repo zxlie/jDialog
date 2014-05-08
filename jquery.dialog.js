@@ -427,7 +427,7 @@ var jDialog = (function($, undefined){
                 .css({
                     "zIndex" : this.cfg.zIndex,
                     "display" : "none"
-                }).appendTo(document.body);
+                }).appendTo(document.body).focus();
 
             // 拼装dialog并初始化其位置
             this._setupTitleBar().title(this.cfg.title);
@@ -1140,7 +1140,7 @@ var jDialog = (function($, undefined){
 
 
     return {
-        version : '1.2',
+        version : '1.3',
         dialog  : _dialog,
         alert   : _alert,
         confirm : _confirm,

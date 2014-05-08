@@ -16,7 +16,7 @@ var jMask = (function($, undefined){
         }, options);
 
         // 遮罩层节点
-        this.element = $('<div class="j-dialog-mask ' + this.cfg.className + '"/>').appendTo(document.body)
+        this.element = $('<div class="j-dialog-mask ' + (this.cfg.className || '') + '"/>').appendTo(document.body)
             .css({
                 'display': 'none',
                 'zIndex' : this.cfg.zIndex,
